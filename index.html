@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Fix Dallas | Whether You're a Homeowner or Property Manager</title>
+    <meta name="description" content="Appliance repair in Dallas for homeowners, landlords, and property managers. Refrigerators, washers, dryers, ovens, and dishwashers.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #be123c 0%, #e11d48 100%);
+            color: white;
+            padding: 1rem 2rem;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .hero {
+            background: #e11d48;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .customer-types {
+            background: #fff1f2;
+            padding: 3rem 2rem;
+            margin: -3rem -2rem 3rem -2rem;
+        }
+        .customer-types h2 {
+            text-align: center;
+            color: #be123c;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .type-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 4px solid #e11d48;
+        }
+        .type-card h3 {
+            color: #be123c;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .type-card p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .type-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .type-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #666;
+        }
+        .type-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #e11d48;
+            font-weight: bold;
+        }
+        .services-section {
+            margin: 3rem 0;
+        }
+        .services-section h2 {
+            color: #be123c;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #e11d48;
+        }
+        .service-card h3 {
+            color: #be123c;
+            margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .client-note {
+            background: #fef3c7;
+            border-left: 4px solid #fbbf24;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 3rem 0;
+        }
+        .client-note h3 {
+            color: #92400e;
+            margin-bottom: 0.75rem;
+        }
+        .client-note p {
+            color: #78350f;
+            line-height: 1.7;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #be123c;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #e11d48;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #be123c 0%, #e11d48 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            opacity: 0.95;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Appliance Fix Dallas</div>
+            <div class="phone">📞 (972) 284-0913</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Whether You're a Homeowner or Property Manager</h1>
+        <p>We repair appliances for residential customers, rental properties, and apartment communities across Dallas.</p>
+    </section>
+
+    <div class="container">
+        <section class="customer-types">
+            <h2>Who We Serve</h2>
+            <div class="types-grid">
+                <div class="type-card">
+                    <h3>Homeowners</h3>
+                    <p>Get your home appliances working again. Same-day service available for urgent repairs.</p>
+                    <ul>
+                        <li>Refrigerators and freezers</li>
+                        <li>Washers and dryers</li>
+                        <li>Dishwashers</li>
+                        <li>Ovens and ranges</li>
+                        <li>All major brands</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <h3>Landlords & Rental Property Owners</h3>
+                    <p>Fast appliance repair for your rental units. Keep tenants happy and properties running.</p>
+                    <ul>
+                        <li>Quick response for tenant calls</li>
+                        <li>Multiple property discounts</li>
+                        <li>Direct tenant scheduling available</li>
+                        <li>Invoice consolidation</li>
+                        <li>Preventive maintenance programs</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <h3>Property Managers</h3>
+                    <p>Reliable appliance repair partner for your portfolio of properties.</p>
+                    <ul>
+                        <li>Dedicated account management</li>
+                        <li>Priority scheduling</li>
+                        <li>Service across multiple locations</li>
+                        <li>Detailed repair documentation</li>
+                        <li>Replace vs repair recommendations</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <h3>Commercial Properties</h3>
+                    <p>Appliance service for break rooms, laundry facilities, and common areas.</p>
+                    <ul>
+                        <li>After-hours service available</li>
+                        <li>Minimal disruption to operations</li>
+                        <li>Commercial-grade equipment</li>
+                        <li>Regular maintenance contracts</li>
+                        <li>Emergency repair service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Appliances We Repair</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Refrigerators</h3>
+                    <p>Not cooling, ice maker issues, water leaks, and compressor problems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Washers</h3>
+                    <p>Won't spin, water leaks, won't drain, and loud noises during cycle.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Dryers</h3>
+                    <p>Not heating, won't start, takes too long to dry, and drum not turning.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Dishwashers</h3>
+                    <p>Won't clean properly, water leaks, won't drain, and spray arm issues.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Ovens & Ranges</h3>
+                    <p>Not heating, burner problems, oven temperature issues, and control panel malfunctions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Microwaves</h3>
+                    <p>Not heating, turntable issues, control problems, and door latch repairs.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="client-note">
+            <h3>🔧 Working with Different Clients in Dallas</h3>
+            <p><strong>Homeowners</strong> usually call when an appliance stops working and need same-day or next-day service. <strong>Landlords</strong> need fast response when tenants report issues—they want the problem fixed quickly to maintain tenant satisfaction. <strong>Property managers</strong> prefer scheduled service and detailed documentation for their records. Each type of client has different priorities and billing preferences—we adjust our service accordingly.</p>
+        </div>
+
+        <section class="form-section">
+            <h2>Request Appliance Repair</h2>
+            <p class="subtitle">Tell us what needs fixing</p>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="DFW-APPLIANCE-001">
+                <input type="hidden" name="market" value="Dallas">
+                <input type="hidden" name="industry" value="Appliance Repair">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="appliancefixdallas.com">
+                
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="client_type">I Am A: *</label>
+                    <select id="client_type" name="client_type" required>
+                        <option value="">Select...</option>
+                        <option value="Homeowner">Homeowner</option>
+                        <option value="Landlord">Landlord/Property Owner</option>
+                        <option value="Property Manager">Property Manager</option>
+                        <option value="Commercial">Commercial Property</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appliance_type">Appliance Type *</label>
+                    <select id="appliance_type" name="appliance_type" required>
+                        <option value="">Select...</option>
+                        <option value="Refrigerator">Refrigerator</option>
+                        <option value="Washer">Washer</option>
+                        <option value="Dryer">Dryer</option>
+                        <option value="Dishwasher">Dishwasher</option>
+                        <option value="Oven/Range">Oven/Range</option>
+                        <option value="Microwave">Microwave</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Service Address *</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Problem Description *</label>
+                    <textarea id="details" name="details" required placeholder="Describe what's wrong with the appliance..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Service</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Appliance Fix Dallas. Professional Appliance Repair.</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
